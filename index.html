@@ -4,108 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abubakar Muhammad Bello - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .skills, .projects, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .skills div, .projects div, .contact div {
+            flex: 1 1 300px;
+            margin: 1rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Abubakar Muhammad Bello</h1>
         <p>Passionate Software Engineer focused on creating intuitive user experiences with modern web technologies.</p>
     </header>
-
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#download-cv">Download CV</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <main>
-        <section id="about">
+    <div class="container" id="home">
+        <div class="section">
             <h2>About Me</h2>
-            <p>Bachelor of Science in Accounting with a Nano degree in React from Udacity. Passionate about web development and continuously improving my skills.</p>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div>
-                <h3>Frontend Software Engineer</h3>
-                <p>FlexiSAF Edusoft Limited (October 2023 - Present)</p>
-                <ul>
-                    <li>Collaborated with product team members to design and implement user-friendly web interfaces.</li>
-                    <li>Utilized React, JavaScript, HTML, and CSS to develop responsive and interactive web components.</li>
-                    <li>Employed Git, GitHub, and BitBucket for version control and project collaboration.</li>
-                    <li>Practiced Agile methodologies using Jira for task management and project tracking.</li>
-                    <li>Integrated TypeScript into React projects for enhanced type safety and code maintainability.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div>
-                <h3>Web Employee Poll App</h3>
-                <p>Technologies: React, Redux, Jest, React Router</p>
-                <ul>
-                    <li>Implemented user login to access and participate in polls.</li>
-                    <li>Users can view and answer existing polls or create new ones.</li>
-                    <li>Displayed a leaderboard ranking users based on poll participation.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>My Finance App</h3>
-                <p>Technologies: React, Node.js, Express, MongoDB</p>
-                <ul>
-                    <li>Users can add, update, and generate expense reports with filtering options.</li>
-                    <li>Created a responsive and intuitive UI using React and Bootstrap.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>My Logistics Web App</h3>
-                <p>Technologies: React, Node.js, Express, Local Storage</p>
-                <ul>
-                    <li>Enables customers to be assigned to specific slots using drag and drop.</li>
-                    <li>Utilized browser's local storage for data persistence.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="skills">
+            <p>I am a Software Engineer with a passion for developing intuitive user experiences using modern web technologies. With expertise in React.js, TypeScript, JavaScript, HTML, and CSS, I am focused on creating responsive and interactive web applications. I hold a Bachelor of Science in Accounting from Gombe State University and have completed a Nanodegree in React from Udacity.</p>
+        </div>
+        <div class="section">
             <h2>Skills</h2>
-            <ul>
-                <li>React.js, TypeScript, JavaScript, HTML, CSS</li>
-                <li>Git, GitHub, BitBucket</li>
-                <li>Agile methodologies (Jira, Notion)</li>
-            </ul>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>The Javascript Algorithms and Data Structure | Freecodecamp (August 31st, 2021)</li>
-                <li>The Responsive Web Design Certification | Freecodecamp (April 7th, 2021)</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:abbakarrsadiq@gmail.com">abbakarrsadiq@gmail.com</a></p>
-            <p>LinkedIn: <a href="http://linkedin.com/in/abbakarr" target="_blank" rel="noopener noreferrer">linkedin.com/in/abbakarr</a></p>
-            <p>GitHub: <a href="http://github.com/abbakarrsadiq" target="_blank" rel="noopener noreferrer">github.com/abbakarrsadiq</a></p>
-        </section>
-
-        <section id="download-cv">
-            <h2>Download CV</h2>
-            <div class="cv-embed">
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vQw9kNZ_ooiwExzOpRSQmrYxf7_4pDz7vVebgyAUNkB8zfw98lS4uTrLmYX46Cu_JD4sGkVur5nS8RR/pub?embedded=true"></iframe>
+            <div class="skills">
+                <div>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git, GitHub, BitBucket</li>
+                        <li>Agile methodologies (Jira, Notion)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Excellent Interpersonal Skill</li>
+                        <li>Effective team-work</li>
+                        <li>Detail oriented</li>
+                    </ul>
+                </div>
             </div>
-            <a href="https://docs.google.com/document/d/2PACX-1vQw9kNZ_ooiwExzOpRSQmrYxf7_4pDz7vVebgyAUNkB8zfw98lS4uTrLmYX46Cu_JD4sGkVur5nS8RR/export?format=pdf" download class="cv-button">Download My CV</a>
-        </section>
-    </main>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <h3>Frontend Software Engineer</h3>
+            <p><strong>FlexiSAF Edusoft Limited</strong> · Internship · October 2023 - Present · Abuja, Nigeria</p>
+            <ul>
+                <li>Collaborated with product team members to design and implement user-friendly web interfaces.</li>
+                <li>Utilized React, JavaScript, HTML, and CSS to develop responsive and interactive web components.</li>
+                <li>Employed Git, GitHub, and BitBucket for version control and project collaboration.</li>
+                <li>Practiced Agile methodologies using Jira for task management and project tracking.</li>
+                <li>Integrated TypeScript into React projects for enhanced type safety and code maintainability.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>
+                    <h3>Web Employee Poll App</h3>
+                    <p>Developed using React, Redux, Jest, and React Router.</p>
+                    <ul>
+                        <li>User Authentication: Implemented user login to access and participate in polls.</li>
+                        <li>Answer and Create Polls: Users can view and answer existing polls or create new ones.</li>
+                        <li>Leaderboard: Displayed a leaderboard ranking users based on poll participation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>My Finance App</h3>
+                    <p>Developed using React, Node.js, Express, and MongoDB.</p>
+                    <ul>
+                        <li>Expense Tracking: Users can add, update, and generate expense reports with filtering options.</li>
+                        <li>User-Friendly Interface: Created a responsive and intuitive UI using React and Bootstrap.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>My Logistics Web App</h3>
+                    <p>Developed using React, Node.js, Express, and Local Storage.</p>
+                    <ul>
+                        <li>Drag and Drop Functionality: Enables customers to be assigned to specific slots using drag and drop.</li>
+                        <li>Local Storage: Utilized browser's local storage for data persistence.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:abbakarrsadiq@gmail.com">abbakarrsadiq@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="http://linkedin.com/in/abbakarr" target="_blank">linkedin.com/in/abbakarr</a></p>
+                </div>
+                <div>
+                    <h3>GitHub</h3>
+                    <p><a href="http://github.com/abbakarrsadiq" target="_blank">github.com/abbakarrsadiq</a></p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+2347066773487</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Abubakar Muhammad Bello</p>
+    </footer>
 </body>
 </html>
-
